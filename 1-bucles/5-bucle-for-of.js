@@ -33,3 +33,24 @@ let gente = [{
         edad: 10
     },
 ]
+
+for(var i = 0; i < gente.length; i++){
+    if((gente[i].nombre).match(/^J/)){
+        console.log(gente[i].nombre);
+    }
+}
+
+console.log("/////////////////////////////////////////")
+for( var x of gente){
+    console.log(x.nombre);
+    if(x.nombre.startsWith("J")){
+        console.log(x.nombre);
+    }
+}
+console.log("/////////////////////////////////////////")
+
+for(var x of gente){
+     if ((x.nombre).match(/^J/)) {
+         console.log(x.nombre);
+     }
+}

@@ -33,3 +33,16 @@ let gente = [{
         edad: 10
     },
 ]
+
+for(var i = 0; i < gente.length; i++){
+    // console.log(gente[i].nombre);
+     if(gente[i].edad > 25){
+         console.log(gente[i].nombre);
+     }
+}
+
+for(var persona of gente){
+    if(persona.edad > 25) {
+        console.log(persona.nombre);
+    }
+}

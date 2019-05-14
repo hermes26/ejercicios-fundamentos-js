@@ -35,3 +35,13 @@ let gente = [{
     },
 ]
 
+gente.filter(function(persona){
+    if((persona.nombre).match(/^J/) && (persona.edad > 40)){
+        console.log(persona.nombre);
+    }
+})
+
+gente.filter(function(persona){
+
+    (((persona.nombre).match(/^J/)) && (persona.edad > 40)) ? console.log(persona.nombre) : && (persona.edad > 40)
+})
