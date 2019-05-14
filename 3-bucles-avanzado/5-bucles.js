@@ -16,12 +16,19 @@ for (let i = 0; i < giveMeIntegerRandom(10); i++) {
 }
 console.log('El array original es:  arr =', arr);
 
-// Aquí tu código
+//Aquí tu código
+
 var total = 0;
-for(var x of arr){
+for(var x in arr){
     total += arr[x];
 }
-console.log(total);
+
+//////////////////////////////////////
+
+var total = 0;
+arr.forEach(function(x){
+    total += x;
+})
 
 // Hasta aquí
 console.log('El total nuevo es: ', total);

@@ -12,9 +12,16 @@ console.log('El array frase es: ', frase);
 
 var acronimo = "";
 for(var x of frase){
-    acronimo += x[0]; 
+    acronimo += x[0].toUpperCase(); 
 }
-acronimo = acronimo.toUpperCase();
+
+/////////////////////////////////
+
+var acronimo = "";
+frase.forEach(function(x){
+    acronimo +=x[0].toUpperCase();
+    
+})
 
 // Hasta aquí
 console.log('El string acronimo es: ', acronimo);
